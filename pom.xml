@@ -32,4 +32,16 @@
         </dependency>
         <!-- spring boot end-->
     </dependencies>
+
+    <build>
+        <!-- 打包名称 -->
+        <finalName>spring-boot-demo-1.0.1</finalName>
+        <plugins>
+            <!-- 打包jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
