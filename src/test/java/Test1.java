@@ -32,4 +32,13 @@ public class Test1 {
     public void test2() throws Exception {
         System.out.println("intro : " + intro);
     }
+
+    @Value("${environment.password}")
+    private String password;
+
+    @Test
+    public void test3() throws Exception {
+        System.out.println("environment password : " + password);
+    }
+
 }
