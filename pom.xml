@@ -15,6 +15,10 @@
         <version>1.4.2.RELEASE</version>
     </parent>
 
+    <properties>
+        <version.log4j>1.2.17</version.log4j>
+    </properties>
+
 
     <dependencies>
         <!-- spring boot start-->
@@ -31,6 +35,14 @@
             <scope>test</scope>
         </dependency>
         <!-- spring boot end-->
+
+        <!-- log4j start-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${version.log4j}</version>
+        </dependency>
+        <!-- log4j end-->
     </dependencies>
 
     <build>
